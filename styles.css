@@ -1,0 +1,100 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #343a40;
+}
+
+h2 {
+    color: #007BFF;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
+}
+
+h3 {
+    margin: 10px 0 5px;
+    color: #495057;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+.edu-item {
+    margin-bottom: 15px;
+}
+
+.objective, .education, .skills, .internships, .soft-skills, .extracurricular, .languages {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    color: #6c757d;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img{
+    position: relative;
+    top: 9px;
+}
+@media print {
+    body {
+        background-color: #ffffff; /* Set background to white for printing */
+        color: #000; /* Ensure text is black */
+    }
+
+    .container {
+        width: 100%; /* Use full width for printing */
+        box-shadow: none; /* Remove shadow for print */
+        padding: 0; /* Remove padding for print */
+    }
+
+    header, footer {
+        page-break-after: avoid; /* Prevent page breaks after header and footer */
+    }
+
+    h1, h2, h3 {
+        page-break-inside: avoid; /* Prevent page breaks inside headings */
+    }
+
+    a {
+        text-decoration: none; /* Remove underline for print */
+    }
+}
